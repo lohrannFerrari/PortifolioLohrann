@@ -6,35 +6,72 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <link 
+
       rel="stylesheet" 
-      href="styles.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+
       />
-     
 
     <link rel="stylesheet" href="styles.css">  
-      <title>Site</title>
+      <title>Portifólio Lohrann</title>
+
+
+
+       <!-- BODY -->
+      <!-- definiçoes de posição , cor e tamnho do backgreound dentro de uma <style>-->
+      <style>
+        body{
+
+          
+          background-position: right bottom;
+          background-color: white;
+          background-size: cover;
+         
+         
+
+
+        }
+
+
+      </style>
     </head>
+
     <body>
+      <script src="script.js"></script>
       <main>
+
+       
+
+
+        <!-- HEADER -->
+
+      <!-- HEADER, com uma classe div com nome logo implemnetando o logo "PORTIFÓLIO LOHRANN FERRARI", uma classe div com menu e a nav-list com os botoes HOME, PROJETOS, HABILIDADES, CURRÍCULO E CONTATO -->
 
         <header>
           <div class="logo">
+
            <i>PORTIFÓLIO LOHRANN FERRARI</i> 
           </div>
           <div class="menu">
             <nav class="nav-list">
-                <a href="#home">Home</a>
-                <a href="#projects">Projetos</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#contact">Contato</a>
+                <a href="#home">HOME</a>
+                <a href="#projects">PROJETOS</a>
+                <a href="#habilidades">HABILIDADES</a>
+                <a href="#Currículo">CURRÍCULO</a>
+                <a href="#contact">CONTATO</a>
+
+            </nav>
                 
           </div>
         </header>
 
+
         <!-- HOME -->
+        <!-- Section home com a div para delimitar as informações sobre a home, h4 e <span> com título, div home-resume descrevendo algumas inforações sobre mim -->
+       
         <section id="home">
           <div class="home-info">
-            <h2>Olá, Sou Lohrann</h2>
+            <h1>Olá, Sou o Lohrann</h1>
             <span class="home-position"> Estudante de Programação </span>
             <span class="home-resume">
 
@@ -45,61 +82,77 @@
               <br> Noção de html, já tendo participado de alguns projetos, utilizando conjuntamente com Css, Bootstrap, no desenvolvimento web. <br>
               
               <br> Conhecimento em Qualidade de Software (praticando testes manuais em Api e finalizei desafios de automatização de teste com selenium utilizando Java.
-              Atualmente atuando com Quality Assurance Analyst voluntário no projeto Sou Junior: https://www.linkedin.com/company/soujunior/ <br>
+              Atualmente atuando com Quality Assurance Analyst voluntário no projeto Sou Junior: <a href="https://www.linkedin.com/company/soujunior/" target="_blank" rel="external">https://www.linkedin.com/company/soujunior/</a></p> <br>
 
             </span>
 
-            <button>
-              <a href="#contact">Contate-me</a>
+            <!-- botão contate-me que leva até a página de contato -->
+
+            <button type="button" class="btn"><a href="#contact">Contate-me</a></button>
+             
             </button>
           </div>
+
+            <!-- imagem pessoal -->
               <div class="home-img">
-                <img src="file:///C:/Users/lohra/OneDrive/%C3%81rea%20de%20Trabalho/Lohrann%20Portifolio/img/.vscode/285350839_798790164417162_5713122100044152887_n%20(1).jpg" alt="foto de perfil">
+                <img src="file:///C:/Users/lohra/OneDrive/%C3%81rea%20de%20Trabalho/Lohrann%20Portifolio/img/vscode/285350839_798790164417162_5713122100044152887_n%20(1).jpg" alt="foto de perfil">
               </div>
         </section>
 
          <!-- PROJECTS -->
+          <!-- Section de projetos, com título e div com informações a respeito dos projetos realizados-->
 
          <section id="projects">
           <h2><em>Projetos</em></h2>
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+            
+              
                 
                 <div class="project-info">
+                   <!-- Título e paragrafo descrevendo os trabalhos realizado por mim com os links do Github -->
                   <h2>Projeto WebSite DSMovie<br></h2>
                   <p>Criação de website moderno e responsivo utilizando as tecnologias HTML, css e Bootstrap. <br> 
-                     Github: https://github.com/lohrannFerrari/dsmovie</p>
+                     Github: <a href="https://github.com/lohrannFerrari/dsmovie" target="_blank" rel="external">https://github.com/lohrannFerrari/dsmovie</a> </p>
+
+
+
+                     <div style="display: inline_block"><br>
+                     <img aligh="center" alt="Lohrann-HTML" height="30" width="40" img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+                     <img aligh="center" alt="Lohrann-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                     <img aligh="center" alt="Lohrann-BootStrap" height="33" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+                    </div>
                 </div>
-              </div>
+              
               
               
                 <div class="project-info">
                   <h2><br>Sistema de Gerenciamento de Conta <br> </h2>
                   <p>Sistema utilizando Java e os princípios da Programação Orientada a Objetos, projeto final de um curso de Back-end com Java<br>
-                     Github: https://github.com/lohrannFerrari/banco-java-oo</p>
+                     Github: <a href="https://github.com/lohrannFerrari/banco-java-oo" target="_blank" rel="external"> https://github.com/lohrannFerrari/banco-java-oo</a></p> 
+
+                     <div style="display: inline_block"><br>
+                     <img aligh="center" alt="Lohrann-Java" height="45" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg">
+                    </div>
+
                 </div>
+              
 
                 
                 <div class="project-info">
                   <h2><br>Desenvolvimento de testes unitários para validar uma API REST <br> </h2>
-                  <p>testes unitários desenvolvidos para validar uma API REST de gerenciamento de um estoque de cerveja<br>
-                     Github: https://github.com/lohrannFerrari/API-REST-Testes-unitarioso</p>
+                  <p>Testes unitários desenvolvidos para validar uma API REST de gerenciamento de um estoque de cerveja<br>
+                     Github: <a href="https://github.com/lohrannFerrari/API-REST-Testes-unitarios" target="_blank" rel="external">https://github.com/lohrannFerrari/API-REST-Testes-unitarios</a></p>
                 </div>
 
-                <div class="project-info">
-                  <h2><br>Sistema de gerenciamento de pessoas em API REST com Spring Boot <br> </h2>
-                  <p>Projeto desenvolvido como desafio proposto pela Dio <br>
-                     Github: https://github.com/lohrannFerrari/API-REST-com-Spring</p>
-                </div>
-                
-              </div>
+               
+              
             </div>
           
           
       </section>
 
        <!-- HABILIDADES -->
+       <!-- Section habilidades com a descrição das minhas habilidades em breaks -->
 
        <section id="habilidades">
         <h2><em>Habilidades</em></h2>
@@ -110,15 +163,15 @@
               <div class="habilidades-info">
                 <span class="home-resume">
     
-                  <h2><br> Java (Programação Orientada a Objetos) <br></h2>
+                  <br> Java (Programação Orientada a Objetos) <br>
                   
-                  <h2><br> Noções de HTML, Css, Bootstrap  <br></h2>
+                  <br> Noções de HTML, Css, Bootstrap  <br>
                   
-                  <h2><br> Conhecimento sobre Qualidade de Software e prático em testes manuais em Api e automatização de teste com selenium utilizando Java <br><h2>
+                  <br> Conhecimento sobre Qualidade de Software e prático em testes manuais em Api e automatização de teste com selenium utilizando Java <br>
 
-                  <h2><br> Noções sobre metodologia ágil <br></h2>
+                  <br> Noções sobre metodologia ágil <br>
 
-                  <h2><br> Inglês avançado <br></h2>
+                  <br> Inglês avançado <br>
                
     
                 </span>
@@ -127,17 +180,51 @@
       </div>
     </section>
 
+     <!-- CURRÍCULO -->
+      <!-- Section Currículo com título e breve texto, um botão em bootstrap com link para download de um pdf com meu currículo -->
+
+     <section id="Currículo">
+      
+      <div class="swiper mySwiper">
+       <div class="Currículo-info">
+        <div class="Currículo-resume">
+     
+         <h2><em>Currículo</em></h2>
+        Para mais informações, segue o link para download do meu currículo
+            <ul>
+              <li><button type="submit" class="btn"><a href="Currículo/Currículo - Lohrann Ferrari - 08 2022.pdf" type="application/pdf" >Baixar Pdf</button></a></li>
+            </ul>
+         
+          </div>
+       </div>
+       </div>
+     </section>
+
 
      <!-- CONTACT -->
 
-  <section id="contact">
-    <h2><em>Contato</em></h2>
-    <form>
-      <input type="text" placeholder="Digite seu nome" />
-      <input type="email" placeholder="Digite seu e-mail" />
+
+      <!-- Section de contatos com link de referencia as minhas redes sociais e aos delas  com imagens e clicáveis -->
+
+
+    <section id="contact">
+    <div > 
+
+      <a href="https://www.instagram.com/lohrannferrari/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
+      <a href = "mailto:lohrannfac@hotmail.com"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a>
+      <a href="https://www.linkedin.com/in/lohrann-bento-ferrari-dos-santos-52b34816b/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+    </div>
+
+     <!-- formulário com inputs name, email, definição dos campos de input e botão com bootstrap type submit. -->
+
+    <form action="https://formsubmit.co/lohrannfac@hotmail.com" method="POST">
+      <input type="name" input id=" name " placeholder="Digite seu nome" />
+      <input type="email"  input id=" email " placeholder="Digite seu e-mail" />
       <textarea cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
-      <button>Enviar</button>
+      <button type=" submit" class="btn">Enviar</button>
     </form>
+
+   
   </section>
 
   <footer>
